@@ -1,0 +1,171 @@
+body{
+    height: 100vh; 
+    
+}
+
+.main{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.section1{
+  background-image: linear-gradient(to right, rgba(78, 78, 78, 0.452), rgba(59, 59, 59, 0.651)), url("../assets/about_us_banner.jpg");
+  height: 87vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-family: 'Questrial', sans-serif;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.section1 h1{
+text-align: center;
+font-size: 2.9rem;
+font-weight: 500;
+width: 100%;
+color: whitesmoke;
+
+}
+
+.section-2{
+  padding: 6rem 16rem;
+  text-align: center;
+  color: #414141;
+  font-family: 'Questrial', sans-serif;
+}
+
+.section-2 h1{
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+
+.section-2 p{
+  line-height: 1.6em;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  
+}
+
+
+.section-3{
+  padding: 3rem 16rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.section-3 .team-container{
+  display: flex;
+  flex-flow: row wrap; 
+  margin-top: 2rem;
+  
+}
+.section-3 h1{
+  color: #11B0F5;
+  font-size: 44px;
+  font-weight: lighter;
+}
+
+.section-3 .team-member-container{
+  height: auto;
+  width: fit-content;
+  text-align: center;
+  margin: 31px;
+  
+}
+
+.section-3 .team-member{
+  width: 216px;
+  height: 217px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+ 
+}
+
+.team-member img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-container p{
+   color:#0F0F0F;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.team-member-container h6{
+  margin-bottom: 0.4rem;
+  font-size: 20px;
+}
+
+.fa-linkedin{
+  color: #999999;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+.section1{
+    height: 48vh;
+}
+.section-3,.section-2{
+  padding: 3rem 1rem;
+}
+
+.section-3 .team-container{
+  
+  justify-content: center;
+  
+}
+
+.section-3 .team-member-container{
+  margin: 2rem auto;
+
+}
+
+
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 360px) 
+and (max-device-width: 1024px) {
+
+.section-2{
+    padding: 5rem 2rem;
+}
+.section-3 {
+    padding: 2rem 8rem;
+}
+
+.section-3 .team-container {
+  justify-content: center;
+}
+
+}
+
+/* ipad and ipad pro  */
+@media screen and (min-width: 768px) and (max-width: 1024px)
+and (orientation:landscape) {
+
+    .section1{
+     height: 100vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+and (orientation:portrait) {
+
+    .section1{
+     height: 57vh;
+    }
+}

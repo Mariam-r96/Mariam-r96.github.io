@@ -1,0 +1,140 @@
+.floating-contact-container{
+    position: absolute; 
+   position: fixed;
+   bottom: 2rem;
+   right: 2rem;
+   padding: 1rem;
+   background-color: #25B1F2;
+   border-radius: 100%;
+   cursor: pointer;
+}
+.floating-contact-container:hover{
+
+   background-color: #1c8cc0;
+  
+}
+.floating-contact{ 
+   width: 55px;
+   height: 55px;
+} 
+.floating-contact img{
+  
+   width: 100%;
+   height: 100%;
+  object-fit: contain;
+  filter: invert(1);
+} 
+
+.question-bar{
+   width: 30%;
+   height: 100%;
+   background-color: #445c75;
+   /* position: absolute; */
+   position: fixed;
+   right: 0;
+   top:0;
+   z-index: 999;
+   box-sizing: border-box;
+   overflow: hidden;
+   transform: translateX(960px);
+}
+.question-bar .close-btn{
+
+position: fixed;
+width: 1.6rem;
+height: 1.6rem;
+right: 3rem;
+top: 1rem;
+cursor: pointer;
+z-index: 999;
+
+}
+.question-bar .close-btn img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+filter: invert(1);
+
+}
+.question-bar .container{
+  position: fixed;
+  font-family: 'Questrial', sans-serif;
+  display:flex;
+  flex-direction: column;
+  padding: 8rem 3rem;
+}
+.question-bar .container h1{
+  font-size: 32px;
+  color: #05A2E6;
+  margin-bottom: 1rem;
+}
+.question-bar .container p{
+   font-size: 18px;
+   line-height: 1.4em;
+   color: white;
+   margin-bottom: 2rem;
+}
+.question-bar .container .query-form input{
+width: 100%;
+padding: 7px 4px;
+outline: none;
+margin-bottom: 5px;
+
+}
+.question-bar .container .query-form input[type="submit"]{
+background-color:rgba(17, 176, 245, 1) ;
+border-radius: 50px;
+padding: 1rem 1rem;
+border: 0;
+width: 50%;
+float: right;
+margin-top: 1rem;
+color: white;
+cursor: pointer;
+}
+.question-bar .container .query-form input[type="submit"]:hover{
+background-color:rgb(20, 149, 204) ;
+transition: all .4s ease-out;
+
+}
+
+.question-bar .container .query-form textarea{
+width: 100%;
+height: 8rem;
+padding: 7px 4px;
+outline: none;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.question-bar .social-icons{
+   display: flex;
+   flex-wrap: row wrap;
+   width: 9rem;
+   margin: 2rem auto;
+}
+.question-bar .social-icons .insta-icon{
+width: 28px;
+height: 28px;
+}
+.question-bar .social-icons .insta-icon img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+filter: invert(1);
+}
+
+@media screen and (max-width: 600px) {
+   .question-bar{
+      width: 100%;
+    
+   }
+  
+}
+@media screen and (max-width: 600px) and (orientation: landscape) {
+   .question-bar{
+      overflow: scroll;
+    
+   }
+  
+}

@@ -1,0 +1,151 @@
+.footer{
+  background-color: #202B37;
+  padding: 6rem 14rem;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+ 
+}
+
+.footer .logo{
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  /* margin: 0 auto; */
+}
+
+.footer .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer .tel a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #A7A7A6;
+  letter-spacing: 0.05rem;
+  /* margin: 0 auto; */
+}
+
+.footer-container li{
+
+  list-style: none;
+  margin-top: 14px;
+  
+}
+
+.footer-container li:first-child{
+
+  margin-top: 0px;
+  
+}
+
+
+.footer-container li a{
+ text-decoration: none;
+ color: white;
+  
+}
+
+.followUs-section{
+  color: white;
+  font-weight: lighter;
+}
+
+.contacts .fa{
+  margin-right: 1rem;
+  color: white;
+}
+.social-icons{
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons .fa{
+  color: white;
+  cursor: pointer;
+  
+}
+
+.footer-container .social-icons .insta-icon{
+  width: 20px;
+  height: 20px;
+}
+.footer-container .social-icons .insta-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: invert(1);
+  }
+
+
+@media screen and (max-width: 600px) {
+
+  .footer{
+    padding: 4rem 1rem;
+  }
+  
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .footer-content{
+    margin: 1.5rem 0;
+  }
+  
+}
+/* ipad and ipad pro  */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+.footer{
+  padding: 4rem 1rem;
+}
+
+}
+
+
+@media screen and (min-width: 973px) and (max-width:1024px){
+
+.footer{
+    padding: 4rem 1.5rem;
+}
+}
+
+
+@media screen and (min-width: 602px) and (max-width:664px){
+
+.footer{
+  padding: 4rem 1rem;
+}
+
+.footer-container{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.footer-content{
+  margin: 1.5rem 0;
+}
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 360px) 
+and (max-device-width: 1024px) {
+
+.footer{
+padding: 5rem 2rem;
+}
+}
